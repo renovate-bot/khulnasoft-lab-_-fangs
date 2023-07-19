@@ -7,7 +7,7 @@ GOIMPORTS_CMD := $(TEMP_DIR)/gosimports -local github.com/khulnasoft-labs
 # Tool versions #################################
 GOLANGCILINT_VERSION := v1.52.1
 GOSIMPORTS_VERSION := v0.3.8
-BOUNCER_VERSION := v0.4.0
+BOUNCER_VERSION := v0.2.0
 
 # Formatting variables #################################
 BOLD := $(shell tput -T linux bold)
@@ -69,7 +69,7 @@ bootstrap: $(TEMP_DIR) bootstrap-go bootstrap-tools ## Download and install all 
 bootstrap-tools: $(TEMP_DIR)
 	GO111MODULE=off GOBIN=$(realpath $(TEMP_DIR)) go get -u golang.org/x/perf/cmd/benchstat
 	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(TEMP_DIR)/ $(GOLANGCILINT_VERSION)
-	curl -sSfL https://raw.githubusercontent.com/wagoodman/go-bouncer/master/bouncer.sh | sh -s -- -b $(TEMP_DIR)/ $(BOUNCER_VERSION)
+	curl -sSfL https://raw.githubusercontent.com/sulaiman-coder/gobouncer/master/bouncer.sh | sh -s -- -b $(TEMP_DIR)/ $(BOUNCER_VERSION)
 	GOBIN="$(realpath $(TEMP_DIR))" go install github.com/rinchsan/gosimports/cmd/gosimports@$(GOSIMPORTS_VERSION)
 
 .PHONY: bootstrap-go
