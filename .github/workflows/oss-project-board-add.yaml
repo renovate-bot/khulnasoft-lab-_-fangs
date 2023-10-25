@@ -11,6 +11,6 @@ on:
 jobs:
 
   run:
-    uses: "khulnasoft-labs/workflows/.github/workflows/oss-project-board-add.yaml@main"
+    uses: "khulnasoft-lab/workflows/.github/workflows/oss-project-board-add.yaml@main"
     secrets:
       token: ${{ secrets.OSS_PROJECT_GH_TOKEN }}

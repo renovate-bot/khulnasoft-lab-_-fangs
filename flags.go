@@ -6,7 +6,7 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/khulnasoft-labs/go-logger"
+	"github.com/khulnasoft-lab/go-logger"
 )
 
 // FlagAdder interface can be implemented by structs in order to add flags when AddFlags is called

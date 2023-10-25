@@ -11,7 +11,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"github.com/khulnasoft-labs/go-logger/adapter/discard"
+	"github.com/khulnasoft-lab/go-logger/adapter/discard"
 )
 
 func Test_Summarize(t *testing.T) {

@@ -2,7 +2,7 @@ TEMP_DIR := ./.tmp
 
 # Command templates #################################
 LINT_CMD := $(TEMP_DIR)/golangci-lint run --tests=false
-GOIMPORTS_CMD := $(TEMP_DIR)/gosimports -local github.com/khulnasoft-labs
+GOIMPORTS_CMD := $(TEMP_DIR)/gosimports -local github.com/khulnasoft-lab
 
 # Tool versions #################################
 GOLANGCILINT_VERSION := v1.52.1
@@ -123,7 +123,7 @@ check-go-mod-tidy:
 .PHONY: unit
 unit: $(TEMP_DIR)  ## Run unit tests (with coverage)
 	$(call title,Running unit tests)
-	go test -coverprofile $(TEMP_DIR)/unit-coverage-details.txt $(shell go list ./... | grep -v khulnasoft-labs/syft/test)
+	go test -coverprofile $(TEMP_DIR)/unit-coverage-details.txt $(shell go list ./... | grep -v khulnasoft-lab/syft/test)
 	@.github/scripts/coverage.py $(COVERAGE_THRESHOLD) $(TEMP_DIR)/unit-coverage-details.txt
 
 

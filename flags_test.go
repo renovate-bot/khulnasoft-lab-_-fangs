@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/khulnasoft-labs/go-logger/adapter/discard"
+	"github.com/khulnasoft-lab/go-logger/adapter/discard"
 )
 
 func Test_EmbeddedAddFlags(t *testing.T) {

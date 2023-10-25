@@ -1,10 +1,10 @@
-module github.com/khulnasoft-labs/fangs
+module github.com/khulnasoft-lab/fangs
 
 go 1.18
 
 require (
 	github.com/adrg/xdg v0.4.0
-	github.com/khulnasoft-labs/go-logger v0.0.0-20230719191807-d7be2e5a3d3e
+	github.com/khulnasoft-lab/go-logger v0.0.0-20231023062814-aeae6c26ed8c
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/spf13/cobra v1.7.0
@@ -25,7 +25,7 @@ require (
 	github.com/spf13/cast v1.5.1 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/subosito/gotenv v1.4.2 // indirect
-	golang.org/x/sys v0.10.0 // indirect
+	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect

@@ -3,8 +3,8 @@ package fangs
 import (
 	"fmt"
 
-	"github.com/khulnasoft-labs/go-logger"
-	"github.com/khulnasoft-labs/go-logger/adapter/discard"
+	"github.com/khulnasoft-lab/go-logger"
+	"github.com/khulnasoft-lab/go-logger/adapter/discard"
 )
 
 type Config struct {

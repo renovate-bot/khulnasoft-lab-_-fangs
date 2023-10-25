@@ -8,7 +8,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/khulnasoft-labs/go-logger"
+	"github.com/khulnasoft-lab/go-logger"
 )
 
 func Summarize(cfg Config, descriptions DescriptionProvider, values ...any) string {
